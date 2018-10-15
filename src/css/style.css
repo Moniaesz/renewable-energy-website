@@ -1,13 +1,17 @@
 /*
-* === Colors===
+* === colors variables===
 */
 /*
+* === other variables===
+*/
+/*
+
 * === general styles ===
 */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito', 'Lato', sans-serif;
   text-align: center; }
 
 li {
@@ -20,17 +24,20 @@ a {
   a:link, a:visited {
     color: #0D4081; }
 
+.active {
+  border-bottom: 3px solid #B8BE00; }
+
 /*
 * === home ===
 */
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 2.5rem;
   position: relative;
   color: #0D4081;
   border-bottom: 4px solid #F6B229;
   display: inline-block;
-  padding-bottom: 1rem; }
+  padding-bottom: 0.5rem; }
 
 header {
   display: flex;
@@ -39,15 +46,74 @@ header {
   padding: 1.3rem; }
 
 .logo img {
-  height: 120px; }
+  height: 80px; }
 
 nav {
-  margin-right: 5rem; }
+  margin-top: -1.8rem; }
   nav ul li {
-    margin: 1.3rem;
+    margin: 0.7rem;
     padding-bottom: 0.5rem; }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   color: #0D4081;
   line-height: 30px; }
+
+.menu {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: left; }
+  .menu .line {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #0D4081;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out; }
+  .menu .one {
+    top: 20%; }
+  .menu .two {
+    top: 50%; }
+  .menu .three {
+    top: 80%; }
+
+/*
+* === o firmie ===
+*/
+.text-block {
+  padding: 1rem; }
+  .text-block img {
+    height: 80px;
+    margin-top: 1.1rem; }
+
+.mockup img {
+  width: 90%;
+  border-radius: 10px; }
+
+/*
+* === media queries ===
+*/
+@media screen and (max-width: 870px) {
+  nav {
+    display: none; } }
+
+@media screen and (min-width: 871px) {
+  nav {
+    display: block; }
+  .menu {
+    display: none; }
+  .text-block {
+    padding: 1rem 25%; }
+  .mockup img {
+    width: 55%; } }
+
+@media screen and (min-width: 1055px) {
+  nav {
+    margin-right: 1rem; } }
+
+@media screen and (min-width: 1255px) {
+  .logo img {
+    height: 120px; }
+  .mockup img {
+    margin-top: 3rem; } }
