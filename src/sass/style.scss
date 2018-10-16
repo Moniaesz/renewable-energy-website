@@ -28,8 +28,6 @@ h1, h2, h3, h4, li {
 h3 {
   font-size: 1.2rem;
   font-weight: 400;
-  padding-top: 2rem;
-  padding-bottom: 1.6rem;
 }
 p {
   font-size: 18px;
@@ -179,6 +177,41 @@ nav {
   width: 100%;
 }
 
+
+/*
+* === kontakt ===
+*/
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  p:first-child {
+    padding: 1.5rem;
+  }
+  img:last-child {
+    display: none;
+  }
+}
+.contact-columns {
+  max-width: 400px;
+  margin: 0 auto;
+  img {
+    height: 55px;
+  }
+  h3 {
+    color: $darkYellow;
+    font-weight: bold;
+  }
+  .column {
+    border-radius: $borderRadius;
+    background: #faf8f8;
+    padding: 2rem 0;
+  }
+  .two {
+    margin-top: 2rem;
+  }
+}
+
+
 /*
 * === media queries ===
 */
@@ -237,6 +270,29 @@ nav {
     box-shadow: $boxShadow;
     padding: 3rem;
     margin-top: 5rem;
+  }
+//kontakt
+  .contact-columns {
+    max-width: 1500px;
+    align-items: flex-start;
+    display: flex;
+    .two {
+      margin-top: 0;
+    }
+    .column {
+      width: 50%;
+      background: none;
+    }
+  }
+  .contact-content {
+    img:last-child {
+      display: block;
+      width: 90%;
+      margin: 2rem auto 2rem auto;
+    }
+    p:first-child {
+      font-size: 23px;
+    }
   }
 }
 

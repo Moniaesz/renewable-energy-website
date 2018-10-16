@@ -19,9 +19,7 @@ h1, h2, h3, h4, li {
 
 h3 {
   font-size: 1.2rem;
-  font-weight: 400;
-  padding-top: 2rem;
-  padding-bottom: 1.6rem; }
+  font-weight: 400; }
 
 p {
   font-size: 18px;
@@ -150,6 +148,32 @@ nav {
   width: 100%; }
 
 /*
+* === kontakt ===
+*/
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto; }
+  .contact-content p:first-child {
+    padding: 1.5rem; }
+  .contact-content img:last-child {
+    display: none; }
+
+.contact-columns {
+  max-width: 400px;
+  margin: 0 auto; }
+  .contact-columns img {
+    height: 55px; }
+  .contact-columns h3 {
+    color: #F6B229;
+    font-weight: bold; }
+  .contact-columns .column {
+    border-radius: 10px;
+    background: #faf8f8;
+    padding: 2rem 0; }
+  .contact-columns .two {
+    margin-top: 2rem; }
+
+/*
 * === media queries ===
 */
 @media screen and (max-width: 870px) {
@@ -185,7 +209,22 @@ nav {
   .fotowoltaika-law {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding: 3rem;
-    margin-top: 5rem; } }
+    margin-top: 5rem; }
+  .contact-columns {
+    max-width: 1500px;
+    align-items: flex-start;
+    display: flex; }
+    .contact-columns .two {
+      margin-top: 0; }
+    .contact-columns .column {
+      width: 50%;
+      background: none; }
+  .contact-content img:last-child {
+    display: block;
+    width: 90%;
+    margin: 2rem auto 2rem auto; }
+  .contact-content p:first-child {
+    font-size: 23px; } }
 
 @media screen and (min-width: 1055px) {
   nav {
