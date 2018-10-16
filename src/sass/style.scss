@@ -11,6 +11,7 @@ $lightBlack: #454242;
 * === other variables===
 */
 $borderRadius: 10px;
+$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 /*
 
 * === general styles ===
@@ -21,9 +22,22 @@ body {
     font-family: 'Nunito', 'Lato', sans-serif;
     text-align: center;
 }
+h1, h2, h3, h4, li {
+  color: $darkBlue;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 1.6rem;
+}
+p {
+  font-size: 18px;
+  color: $darkBlue;
+  line-height: 30px;
+}
 li {
   list-style-type: none;
-  display: inline;
   font-size: 18px;
 }
 a {
@@ -41,7 +55,6 @@ a {
 */
 h2 {
   font-size: 1.5rem;
-  // text-align: center;
   margin-top: 2.5rem;
   position: relative;
   color: $darkBlue;
@@ -50,6 +63,8 @@ h2 {
   padding-bottom: 0.5rem;
 }
 header {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,13 +79,9 @@ nav {
       li {
         margin: 0.7rem;
         padding-bottom: 0.5rem;
+        display: inline;
       }
   }
-}
-p {
-  font-size: 18px;
-  color: $darkBlue;
-  line-height: 30px;
 }
 .menu {
   width: 50px;
@@ -113,7 +124,60 @@ p {
   }
 }
 
-
+/*
+* === fotowoltaika ===
+*/
+.fotowoltaika-tiles {
+  max-width: 1200px;
+  p {
+    color: #fff;
+  }
+  .one {
+    background-image: url("../assets/ps-color-pic/panels-bg.jpg");
+  }
+  .two {
+    background-image: url("../assets/ps-color-pic/inverter-bg.jpg");
+  }
+  img {
+    height: 80px;
+  }
+}
+.fotowoltaika-tile {
+  background-repeat: no-repeat;
+  background-position: center; 
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: $borderRadius;
+}
+.fotowolaika-content {
+  padding: 0.7rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  ul {
+    text-align: left;
+    li {
+      line-height: 2rem;
+      list-style-type: circle;
+      list-style-image: url("../assets/flaticon/tick.jpg");
+      margin-bottom: 1rem;
+    }
+  }
+  p {
+    line-height: 2rem;
+  }
+}
+.fotowoltaika-law {
+  box-shadow: $boxShadow;
+  border-radius: $borderRadius;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.law {
+  height: 70px;
+}
+.on-grid {
+  width: 100%;
+}
 
 /*
 * === media queries ===
@@ -121,6 +185,11 @@ p {
 @media screen and (max-width: 870px) {
   nav {
     display: none;
+  }
+  .fotowoltaika-tiles {
+    .two {
+      margin-top: 2rem;
+    }
   }
 }
 
@@ -140,6 +209,35 @@ p {
       width: 55%;
     }
   }
+//fotowoltaika
+  .fotowoltaika-tiles {
+    display: flex;
+    margin: 0 auto;
+    margin-top:2rem;
+    img {
+      height: 100px;
+    }
+    p {
+      padding: 2rem;
+    }
+    .one {
+      margin-right: 2rem;
+    }
+    .two {
+      margin-left: 2rem;
+    }
+  }
+  .fotowoltaika-content {
+    ul {
+      padding: 0 6rem;
+      text-align: center;
+    }
+  }
+  .fotowoltaika-law {
+    box-shadow: $boxShadow;
+    padding: 3rem;
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 1055px) {
@@ -149,6 +247,15 @@ p {
 }
 
 @media screen and (min-width: 1255px) {
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  p, li {
+    font-size: 20px;
+  }
   // o-firmie
   .logo img {
       height: 120px;
@@ -157,5 +264,14 @@ p {
     img {
       margin-top: 3rem;
     }
+  }
+//fotowoltaika 
+  .fotowolaika-content {
+    p {
+      line-height: 2.6rem;
+    }
+  }
+  .on-grid {
+    margin: 2.7rem 0;
   }
 }

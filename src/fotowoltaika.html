@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="./js/app.js"></script>
   <title>Sunpower photovoltaic fotowoltaika</title>
@@ -15,15 +18,63 @@
     </div>
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="o-firmie.html">O firmie</a></li>
-        <li><a href="fotowoltaika.html">Fotowoltaika</a></li>
+        <li class="active"><a href="fotowoltaika.html">Fotowoltaika</a></li>
         <li><a href="oferta.html">Oferta</a></li>
         <li><a href="realizacje.html">Realizacje</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
       </ul>
     </nav>
+    <div class="menu">
+      <span class="line one"></span>
+      <span class="line two"></span>
+      <span class="line three"></span>
+    </div>
   </header>
 
     <h2>Fotowoltaika</h2>
-</body> 
+
+    <h3>Zasada działania elektrowni słonecznej:</h3>
+
+    <div class="fotowoltaika-tiles">
+      <div class="fotowoltaika-tile one">
+        <img src="/assets/flaticon/solar-panel.png" alt="">
+        <p>Panele fotowoltaiczne – to właśnie w nich, energia promieniowania słonecznego jest zamieniana na energię elektryczną. Panele produkują prąd stały, który następnie kierowany jest do falownika.</p>
+      </div>
+      <div class="fotowoltaika-tile two">
+        <img src="/assets/flaticon/power.png" alt="">
+        <p>Falownik – inaczej inwerter. Energia elektryczna wytworzona przez panele fotowoltaiczne trafia do falownika, który zamienia prąd stały na prąd zmienny – dokładnie taki jaki mamy w gniazdkach.</p>
+      </div>
+    </div>
+
+    <div class="fotowolaika-content">
+
+      <p>Wytworzony w ten sposób prąd możemy zużywać na własne potrzeby zasilając wszystkie urządzenia elektryczne w budynku. Nadwyżka energii zostanie wprowadzona do sieci Zakładu Energetycznego, tam zostanie przechowana jak w akumulatorze, aby mogła zostać pobrana gdy zajdzie taka potrzeba. Dzięki takiemu rozwiązaniu nie ma konieczności inwestowania w drogie akumulatory - ich rolę pełni w tej chwili sieć lokalnego Operatora Energetycznego, który jest zobowiązany aby przyjąć i „przechować” naszą energię.</p>
+      <p>W zależności od rodzaju instalacji nadwyżkę wyprodukowanej energii możemy odsprzedawać zakładowi energetycznemu – są to instalacje <strong>On-Grid</strong>, które są podłączone do sieci lokalnego dostawcy energii.</p>
+      <p>Drugą możliwością jest magazynowanie energii w akumulatorach czyli tzw instalacje <strong>Off-Grid</strong> – nazywane także wyspowymi. Taki typ instalacji nie jest podłączony do sieci zakładu energetycznego.</p>
+
+      <img class="on-grid" src="/assets/other/on-grid.jpg" alt="przekrój ilustrujący działanie paneli">
+
+      <h3>Najważniejsze zalety instalacji fotowoltaicznej:</h3>
+      <ul>
+        <li>panele słoneczne zapewniają ponad 30 lat bezobsługowej pracy, wytwarzając każdego dnia darmowy prąd.</li>
+        <li>mikroinstalacje dla budynków jednorodzinnych nie wymagają specjalnego pozwolenia na budowę a operator energetyczny ma obowiązek podłączyć wybudowaną instalacje do swojej sieci dystrybucyjnej</li>
+        <li>panel o mocy 1 kwp, skierowany na południe wytworzy w ciągu roku około 900-1100 kwh energii elektrycznej</li>
+        <li>panele słoneczne nie generują kosztów związanych z eksploatacja elektrowni. prąd wytworzony ze słońca jest darmowy</li>
+        <li>inwestor uzyskuję niezależność energetyczną – nie musi martwić się o ciągły wzrost cen energii elektrycznej</li>
+        <li>w przeciwieństwie do kolektorów słonecznych, panele słoneczne produkują energie elektryczną a nie ciepło. energia ta może być wykorzystana do wszystkiego – nawet ogrzewania wody czy budynku</li>
+        <li>od momentu uruchomienia instalacji, każdego dnia czerpiemy darmowy prąd ze słońca</li>
+      </ul>
+
+      <div class="fotowoltaika-law">
+        <img class="law" src="/assets/flaticon/ustawa.jpg" alt="ikona z młotkiem sędziowskim - symbolem ustanowionego prawa">
+        <p>Od 01.01.2016 zgodnie z ustawą wszedł w życie net-metering. Jest to system dzięki, któremu sieć dystrybucyjna jest traktowana jako akumulator. W przypadku, gdy nasza elektrownia produkuje więcej energii niż zużywa w danym momencie budynek, nadwyżka ta kierowana jest do sieci i może zostać odebrana gdy zajdzie taka potrzeba. Rozliczenia z zakładem energetycznym odbywają się w okresach półrocznych. Jeżeli bilans wykazuje, że zużyliśmy tyle energii ile pobraliśmy - koszt energii elektrycznej wyniesie 0zł, ponosimy jedynie koszty utrzymania sieci. Bilans może być również dodatni – więcej energii wyprodukowanej niż pobranej. W takim przypadku zakład energetyczny zapłaci nam za nadwyżkę, którą oddaliśmy do sieci. W przypadku bilansu ujemnego, poniesiemy koszty energii, którą pobraliśmy z sieci.</p> 
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>
