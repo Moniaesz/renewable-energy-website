@@ -11,7 +11,7 @@ $lightBlack: #454242;
 * === other variables===
 */
 $borderRadius: 10px;
-$boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$boxShadow: 0 3px 5px rgba(57, 63, 72, 0.3);
 $transition: 0.3s ease-in-out;
 /*
 
@@ -37,13 +37,13 @@ h3 {
   font-weight: 400;
 }
 p {
-  font-size: 18px;
+  font-size: 17px;
   color: $darkBlue;
   line-height: 30px;
 }
 li {
   list-style-type: none;
-  font-size: 18px;
+  font-size: 17px;
 }
 a {
   text-decoration: none;
@@ -59,29 +59,37 @@ a {
 * === header ===
 */
 header {
+ box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.header-inner {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3rem;
+  padding: 0.3rem 1.3rem 1.3rem 1.3rem;
+}
+.logo {
+  height: 70px;
 }
 .logo img {
-    height: 80px;
+    height: 70px;
+    margin-top: 0.3rem;
 }
 nav {
   margin-top: -1.8rem;
   ul {
+    margin-top: 2rem;
       li {
         margin: 0.7rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.2rem;
         display: inline;
       }
   }
 }
 .menu {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   position: relative;
   text-align: left;
   .line {
@@ -462,6 +470,28 @@ h2 {
   p, li {
     font-size: 20px;
   }
+//header 
+  .header-inner {
+    nav {
+      ul {
+        margin-top: 3rem;
+      }
+    }
+  }
+  .header-inner-overlay {
+    nav {
+      .ul-overlay {
+        margin-top: 4rem;
+      }
+    }
+  }
+  .logo {
+    height: 80px;
+  }
+  .logo img {
+    height: 80px;
+    margin-top: 0.5rem;
+  }
 //home
   .ref-tiles {
   }
@@ -472,7 +502,10 @@ h2 {
     }
   }
   // o-firmie
-  .logo img {
+  .logo-overlay {
+    height: 60px;
+  }
+  .logo-overlay img {
       height: 120px;
   }
   .mockup {
