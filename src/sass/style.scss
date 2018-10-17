@@ -12,6 +12,7 @@ $lightBlack: #454242;
 */
 $borderRadius: 10px;
 $boxShadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$transition: 0.3s ease-in-out;
 /*
 
 * === general styles ===
@@ -21,9 +22,15 @@ body {
     padding: 0;
     font-family: 'Nunito', 'Lato', sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 h1, h2, h3, h4, li {
   color: $darkBlue;
+}
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
 }
 h3 {
   font-size: 1.2rem;
@@ -49,18 +56,8 @@ a {
 }
 
 /*
-* === home ===
+* === header ===
 */
-h2 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  position: relative;
-  color: $darkBlue;
-  border-bottom: 4px solid $darkYellow;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-}
-//header
 header {
   max-width: 1400px;
   margin: 0 auto;
@@ -105,7 +102,108 @@ nav {
       top: 80%;
     }
 }
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+  color: $darkBlue;
+  border-bottom: 4px solid $darkYellow;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
 
+/*
+* === home ===
+*/
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/ps-color-pic/panels-oferta-db.jpg");
+  height: 32vh;
+  background-position: center;
+  h1 {
+    padding: 1rem;
+  }
+}
+//reference tiles
+.ref-tiles {
+  display: flex;
+  flex-direction: column;
+}
+.tile {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f5;
+  margin-top: 2rem; 
+  padding: 2rem;
+  border-radius: $borderRadius;
+  img {
+  height: 60px;
+  margin-top: 1.1rem;
+  }
+  button {
+    font-family: 'Nunito';
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: none;
+    color: $darkBlue;
+    border-radius: $borderRadius;
+    transition: all 0.5s;
+    &:hover {
+      background: $darkBlue;
+      color: #fff;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+//photo-tiles
+.home-photo-tiles {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  img {
+    height: 50px;
+  }
+}
+.rectangle {
+  margin: 0 auto;
+  height: 12rem;
+  width: 90%;
+}
+.icon-tile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: $darkBlue;
+  color: #fff;
+  p {
+    margin-top: 0;
+    color: #fff;
+  }
+}
+.home-photo-tile {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+.quality {
+  background-image: url("../assets/realizacje/IMG_4567-1024x768.jpg");
+}
+.energy {
+  background-image: url("../assets/realizacje/IMG_4009-1024x576.jpg");
+}
+.assembly {
+  background-image: url("../assets/pexels/assembly.jpg");
+}
 /*
 * === o firmie ===
 */
@@ -236,11 +334,47 @@ nav {
 }
 
 @media screen and (min-width: 871px) {
+//header
   nav {
     display: block;
   }
   .menu {
     display: none;
+  }
+//home
+  .home-banner {
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+  .ref-tiles {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .tile {
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: auto;
+    }
+  }
+  .home-photo-tiles {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: (3, 1fr);
+  }
+  .energy {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .rectangle {
+    margin: 0 auto;
+    height: 20rem;
+    width: 100%;
   }
 // o-firmie
   .text-block {
@@ -306,6 +440,12 @@ nav {
   }
 }
 
+@media screen and (min-width: 990px) and (max-width: 1160px) {
+  .tile {
+    max-width: 250px;
+  }
+}
+
 @media screen and (min-width: 1055px) {
   nav {
     margin-right: 1rem;
@@ -321,6 +461,15 @@ nav {
   }
   p, li {
     font-size: 20px;
+  }
+//home
+  .ref-tiles {
+  }
+  .tile {
+    margin-right: 3rem;
+    &:last-child {
+      margin-right: auto;
+    }
   }
   // o-firmie
   .logo img {

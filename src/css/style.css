@@ -12,10 +12,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', 'Lato', sans-serif;
-  text-align: center; }
+  text-align: center;
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, li {
   color: #0D4081; }
+
+h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300; }
 
 h3 {
   font-size: 1.2rem;
@@ -39,17 +45,8 @@ a {
   border-bottom: 3px solid #B8BE00; }
 
 /*
-* === home ===
+* === header ===
 */
-h2 {
-  font-size: 1.5rem;
-  margin-top: 2.5rem;
-  position: relative;
-  color: #0D4081;
-  border-bottom: 4px solid #F6B229;
-  display: inline-block;
-  padding-bottom: 0.5rem; }
-
 header {
   max-width: 1400px;
   margin: 0 auto;
@@ -86,6 +83,98 @@ nav {
     top: 50%; }
   .menu .three {
     top: 80%; }
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  position: relative;
+  color: #0D4081;
+  border-bottom: 4px solid #F6B229;
+  display: inline-block;
+  padding-bottom: 0.5rem; }
+
+/*
+* === home ===
+*/
+.home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/ps-color-pic/panels-oferta-db.jpg");
+  height: 32vh;
+  background-position: center; }
+  .home-banner h1 {
+    padding: 1rem; }
+
+.ref-tiles {
+  display: flex;
+  flex-direction: column; }
+
+.tile {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #f4f5f5;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 10px; }
+  .tile img {
+    height: 60px;
+    margin-top: 1.1rem; }
+  .tile button {
+    font-family: 'Nunito';
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: none;
+    color: #0D4081;
+    border-radius: 10px;
+    transition: all 0.5s; }
+    .tile button:hover {
+      background: #0D4081;
+      color: #fff; }
+  .tile p {
+    margin: 0; }
+
+.home-photo-tiles {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2rem; }
+  .home-photo-tiles img {
+    height: 50px; }
+
+.rectangle {
+  margin: 0 auto;
+  height: 12rem;
+  width: 90%; }
+
+.icon-tile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #0D4081;
+  color: #fff; }
+  .icon-tile p {
+    margin-top: 0;
+    color: #fff; }
+
+.home-photo-tile {
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1rem; }
+
+.quality {
+  background-image: url("../assets/realizacje/IMG_4567-1024x768.jpg"); }
+
+.energy {
+  background-image: url("../assets/realizacje/IMG_4009-1024x576.jpg"); }
+
+.assembly {
+  background-image: url("../assets/pexels/assembly.jpg"); }
 
 /*
 * === o firmie ===
@@ -191,6 +280,31 @@ nav {
     display: block; }
   .menu {
     display: none; }
+  .home-banner h1 {
+    font-size: 1.7rem; }
+  .ref-tiles {
+    flex-direction: row;
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 2rem; }
+  .tile {
+    margin-right: 1rem; }
+    .tile:last-child {
+      margin-right: auto; }
+  .home-photo-tiles {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3, 1fr; }
+  .energy {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .rectangle {
+    margin: 0 auto;
+    height: 20rem;
+    width: 100%; }
   .text-block {
     padding: 1rem 25%; }
   .mockup img {
@@ -231,6 +345,10 @@ nav {
   .contact-content p:first-child {
     font-size: 20px; } }
 
+@media screen and (min-width: 990px) and (max-width: 1160px) {
+  .tile {
+    max-width: 250px; } }
+
 @media screen and (min-width: 1055px) {
   nav {
     margin-right: 1rem; } }
@@ -242,6 +360,10 @@ nav {
     font-size: 1.6rem; }
   p, li {
     font-size: 20px; }
+  .tile {
+    margin-right: 3rem; }
+    .tile:last-child {
+      margin-right: auto; }
   .logo img {
     height: 120px; }
   .mockup img {
