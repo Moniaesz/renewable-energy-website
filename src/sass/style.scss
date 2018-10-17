@@ -60,6 +60,7 @@ h2 {
   display: inline-block;
   padding-bottom: 0.5rem;
 }
+//header
 header {
   max-width: 1400px;
   margin: 0 auto;
@@ -206,6 +207,11 @@ nav {
     background: #faf8f8;
     padding: 2rem 0;
   }
+  .one {
+    p:nth-child(odd) {
+      margin-top: -1rem;
+    }
+  }
   .two {
     margin-top: 2rem;
   }
@@ -291,7 +297,7 @@ nav {
       margin: 2rem auto 2rem auto;
     }
     p:first-child {
-      font-size: 23px;
+      font-size: 20px;
     }
   }
 }

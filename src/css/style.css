@@ -170,6 +170,8 @@ nav {
     border-radius: 10px;
     background: #faf8f8;
     padding: 2rem 0; }
+  .contact-columns .one p:nth-child(odd) {
+    margin-top: -1rem; }
   .contact-columns .two {
     margin-top: 2rem; }
 
@@ -224,7 +226,7 @@ nav {
     width: 90%;
     margin: 2rem auto 2rem auto; }
   .contact-content p:first-child {
-    font-size: 23px; } }
+    font-size: 20px; } }
 
 @media screen and (min-width: 1055px) {
   nav {
