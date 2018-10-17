@@ -152,6 +152,9 @@ nav {
   padding: 0.7rem;
   max-width: 1000px;
   margin: 0 auto;
+  h3 {
+    padding-bottom: 1.5rem;
+  }
   ul {
     text-align: left;
     li {
@@ -252,7 +255,8 @@ nav {
   .fotowoltaika-tiles {
     display: flex;
     margin: 0 auto;
-    margin-top:2rem;
+    margin-top:2.5rem;
+    margin-bottom: 1.2rem;
     img {
       height: 100px;
     }

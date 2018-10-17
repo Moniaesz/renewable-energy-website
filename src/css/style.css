@@ -125,6 +125,8 @@ nav {
   padding: 0.7rem;
   max-width: 1000px;
   margin: 0 auto; }
+  .fotowolaika-content h3 {
+    padding-bottom: 1.5rem; }
   .fotowolaika-content ul {
     text-align: left; }
     .fotowolaika-content ul li {
@@ -196,7 +198,8 @@ nav {
   .fotowoltaika-tiles {
     display: flex;
     margin: 0 auto;
-    margin-top: 2rem; }
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem; }
     .fotowoltaika-tiles img {
       height: 100px; }
     .fotowoltaika-tiles p {
