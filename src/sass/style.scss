@@ -6,7 +6,9 @@ $darkBlue: #0D4081;
 $dakrGreen: #647C2B;
 $lightGreen: #B8BE00;
 $darkYellow: #F6B229;
+$lightGrey: #f9f8f8;
 $lightBlack: #454242;
+
 /*
 * === other variables===
 */
@@ -123,16 +125,28 @@ h2 {
 /*
 * === home ===
 */
-.home-banner {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../assets/ps-color-pic/panels-oferta-db.jpg");
   height: 32vh;
-  background-position: center;
   h1 {
     padding: 1rem;
   }
+}
+.home-banner {
+  background-image: url("../assets/ps-color-pic/panels-oferta-db.jpg");
+  background-position: center;
+}
+.oferta-banner {
+  background-image: url("../assets/ps-color-pic/szkic-db.jpg");
+  h3 {
+    color: #fff;
+    max-width: 600px;
+    font-weight: 300;
+    padding: 1rem;
+  }
+  
 }
 //reference tiles
 .ref-tiles {
@@ -287,6 +301,39 @@ h2 {
   width: 100%;
 }
 
+/*
+* === oferta ===
+*/
+.kroki {
+  margin-top: 1.6rem;
+}
+.kroki-tile {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  background: $lightGrey;
+  border-radius: $borderRadius;
+  img {
+    height: 60px;
+  }
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $darkYellow;
+    margin: 0.5rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    font-weight: bold;
+  }
+  p {
+    padding-bottom: 1rem;
+    margin-left: 0.8rem;
+    margin-right:0.81rem;
+  }
+}
 
 /*
 * === kontakt ===
@@ -331,13 +378,28 @@ h2 {
 * === media queries ===
 */
 @media screen and (max-width: 870px) {
+//header
   nav {
     display: none;
   }
+//fotowoltaika
   .fotowoltaika-tiles {
     .two {
       margin-top: 2rem;
     }
+  }
+}
+
+@media screen and (min-width: 796px) and (max-width: 1087px) {
+//oferta
+  .kroki {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .kroki-tile {
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 1rem;
   }
 }
 
@@ -455,8 +517,24 @@ h2 {
 }
 
 @media screen and (min-width: 1055px) {
+//header
   nav {
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1089px) {
+//oferta
+  .kroki {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .kroki-tile {
+    margin: 0.5rem;
   }
 }
 

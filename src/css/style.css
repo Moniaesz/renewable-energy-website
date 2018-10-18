@@ -105,14 +105,24 @@ h2 {
 /*
 * === home ===
 */
-.home-banner {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 32vh; }
+  .banner h1 {
+    padding: 1rem; }
+
+.home-banner {
   background-image: url("../assets/ps-color-pic/panels-oferta-db.jpg");
-  height: 32vh;
   background-position: center; }
-  .home-banner h1 {
+
+.oferta-banner {
+  background-image: url("../assets/ps-color-pic/szkic-db.jpg"); }
+  .oferta-banner h3 {
+    color: #fff;
+    max-width: 600px;
+    font-weight: 300;
     padding: 1rem; }
 
 .ref-tiles {
@@ -248,6 +258,35 @@ h2 {
   width: 100%; }
 
 /*
+* === oferta ===
+*/
+.kroki {
+  margin-top: 1.6rem; }
+
+.kroki-tile {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  background: #f9f8f8;
+  border-radius: 10px; }
+  .kroki-tile img {
+    height: 60px; }
+  .kroki-tile h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #F6B229;
+    margin: 0.5rem; }
+  .kroki-tile h4 {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    font-weight: bold; }
+  .kroki-tile p {
+    padding-bottom: 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.81rem; }
+
+/*
 * === kontakt ===
 */
 .contact-content {
@@ -283,6 +322,15 @@ h2 {
     display: none; }
   .fotowoltaika-tiles .two {
     margin-top: 2rem; } }
+
+@media screen and (min-width: 796px) and (max-width: 1087px) {
+  .kroki {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .kroki-tile {
+    padding: 2rem 1rem 1rem 1rem;
+    margin: 1rem; } }
 
 @media screen and (min-width: 871px) {
   nav {
@@ -361,6 +409,17 @@ h2 {
 @media screen and (min-width: 1055px) {
   nav {
     margin-right: 1rem; } }
+
+@media screen and (min-width: 1089px) {
+  .kroki {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+  .kroki-tile {
+    margin: 0.5rem; } }
 
 @media screen and (min-width: 1255px) {
   h2 {
