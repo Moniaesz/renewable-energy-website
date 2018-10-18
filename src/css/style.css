@@ -42,7 +42,9 @@ a {
     color: #0D4081; }
 
 .active {
-  border-bottom: 3px solid #B8BE00; }
+  border-bottom: 3px solid #0D87C4; }
+  .active a {
+    color: #0D87C4; }
 
 /*
 * === header ===
@@ -72,7 +74,10 @@ nav {
     nav ul li {
       margin: 0.7rem;
       padding-bottom: 0.2rem;
-      display: inline; }
+      display: inline;
+      transition: 0.3s ease-in-out; }
+      nav ul li:hover a {
+        color: #0D87C4; }
 
 .menu {
   width: 48px;

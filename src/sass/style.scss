@@ -55,7 +55,10 @@ a {
   }
 }
 .active {
-  border-bottom: 3px solid $lightGreen;
+  border-bottom: 3px solid $lightBlue;
+  a {
+    color: $lightBlue;
+  }
 }
 
 /*
@@ -87,6 +90,12 @@ nav {
         margin: 0.7rem;
         padding-bottom: 0.2rem;
         display: inline;
+        transition: $transition;
+        &:hover {
+          a {
+            color: $lightBlue;
+          }
+        }
       }
   }
 }
