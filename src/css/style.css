@@ -206,10 +206,10 @@ h2 {
   margin-bottom: 1rem; }
 
 .quality {
-  background-image: url("../assets/realizacje/IMG_4567-1024x768.jpg"); }
+  background-image: url("../assets/realizacje/16.jpg"); }
 
 .energy {
-  background-image: url("../assets/realizacje/IMG_4009-1024x576.jpg"); }
+  background-image: url("../assets/realizacje/8.jpg"); }
 
 .assembly {
   background-image: url("../assets/pexels/assembly.jpg"); }
@@ -306,6 +306,151 @@ h2 {
     margin-right: 0.81rem; }
 
 /*
+* === realizacje ===
+*/
+.gallery .img {
+  margin: 1rem auto;
+  width: 95%;
+  height: 300px;
+  background-position: center;
+  background-size: cover; }
+
+.img-00 {
+  background-image: url("../assets/realizacje/00.jpg"); }
+
+.img-01 {
+  background-image: url("../assets/realizacje/01.jpg"); }
+
+.img-02 {
+  background-image: url("../assets/realizacje/02.jpg"); }
+
+.img-03 {
+  background-image: url("../assets/realizacje/03.jpg"); }
+
+.img-04 {
+  background-image: url("../assets/realizacje/04.jpg"); }
+
+.img-05 {
+  background-image: url("../assets/realizacje/05.jpg"); }
+
+.img-06 {
+  background-image: url("../assets/realizacje/06.jpg"); }
+
+.img-07 {
+  background-image: url("../assets/realizacje/07.jpg"); }
+
+.img-08 {
+  background-image: url("../assets/realizacje/08.jpg"); }
+
+.img-09 {
+  background-image: url("../assets/realizacje/09.jpg"); }
+
+.img-010 {
+  background-image: url("../assets/realizacje/010.jpg"); }
+
+.img-011 {
+  background-image: url("../assets/realizacje/011.jpg"); }
+
+.img-1 {
+  background-image: url("../assets/realizacje/1.jpg"); }
+
+.img-2 {
+  background-image: url("../assets/realizacje/2.jpg"); }
+
+.img-3 {
+  background-image: url("../assets/realizacje/3.jpg"); }
+
+.img-4 {
+  background-image: url("../assets/realizacje/4.jpg"); }
+
+.img-5 {
+  background-image: url("../assets/realizacje/5.jpg"); }
+
+.img-6 {
+  background-image: url("../assets/realizacje/6.jpg"); }
+
+.img-7 {
+  background-image: url("../assets/realizacje/7.jpg"); }
+
+.img-8 {
+  background-image: url("../assets/realizacje/8.jpg"); }
+
+.img-9 {
+  background-image: url("../assets/realizacje/9.jpg"); }
+
+.img-10 {
+  background-image: url("../assets/realizacje/10.jpg"); }
+
+.img-11 {
+  background-image: url("../assets/realizacje/11.jpg"); }
+
+.img-12 {
+  background-image: url("../assets/realizacje/12.jpg"); }
+
+.img-13 {
+  background-image: url("../assets/realizacje/13.jpg"); }
+
+.img-14 {
+  background-image: url("../assets/realizacje/14.jpg"); }
+
+.img-15 {
+  background-image: url("../assets/realizacje/15.jpg"); }
+
+.img-16 {
+  background-image: url("../assets/realizacje/16.jpg"); }
+
+.img-17 {
+  background-image: url("../assets/realizacje/17.jpg"); }
+
+.img-18 {
+  background-image: url("../assets/realizacje/18.jpg"); }
+
+.img-19 {
+  background-image: url("../assets/realizacje/19.jpg"); }
+
+.img-20 {
+  background-image: url("../assets/realizacje/20.jpg"); }
+
+.img-21 {
+  background-image: url("../assets/realizacje/21.jpg"); }
+
+.img-22 {
+  background-image: url("../assets/realizacje/22.jpg"); }
+
+.img-23 {
+  background-image: url("../assets/realizacje/23.jpg"); }
+
+.img-24 {
+  background-image: url("../assets/realizacje/24.jpg"); }
+
+.img-25 {
+  background-image: url("../assets/realizacje/25.jpg"); }
+
+.img-26 {
+  background-image: url("../assets/realizacje/26.jpg"); }
+
+.img-27 {
+  background-image: url("../assets/realizacje/27.jpg"); }
+
+.img-28 {
+  background-image: url("../assets/realizacje/28.jpg"); }
+
+.img-29 {
+  background-image: url("../assets/realizacje/29.jpg"); }
+
+.img-30 {
+  background-image: url("../assets/realizacje/30.jpg"); }
+
+.img-31 {
+  background-image: url("../assets/realizacje/31.jpg"); }
+
+.img-32 {
+  background-image: url("../assets/realizacje/32.jpg"); }
+
+.img-33 {
+  background-image: url("../assets/realizacje/33.jpg"); }
+
+/*
 * === kontakt ===
 */
 .contact-content {
@@ -342,14 +487,23 @@ h2 {
   .fotowoltaika-tiles .two {
     margin-top: 2rem; } }
 
-@media screen and (min-width: 796px) and (max-width: 1087px) {
+@media screen and (min-width: 796px) and (max-width: 1088px) {
   .kroki {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr; }
   .kroki-tile {
     padding: 2rem 1rem 1rem 1rem;
-    margin: 1rem; } }
+    margin: 1rem; }
+  .gallery {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; }
+    .gallery .img {
+      width: 100%;
+      margin: 0 auto; } }
 
 @media screen and (min-width: 871px) {
   nav {
@@ -438,7 +592,17 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr; }
   .kroki-tile {
-    margin: 0.5rem; } }
+    margin: 0.5rem; }
+  .gallery {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px; }
+    .gallery .img {
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 0; } }
 
 @media screen and (min-width: 1255px) {
   h2 {
