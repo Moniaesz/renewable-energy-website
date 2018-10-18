@@ -141,23 +141,42 @@ h2 {
   .tile img {
     height: 60px;
     margin-top: 1.1rem; }
+  .tile p {
+    margin: 0; }
   .tile button {
     font-family: 'Nunito';
     font-size: 1rem;
     margin-top: 1.3rem;
     cursor: pointer;
+    width: 160px;
     padding: 1rem;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background: #13314f;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
     border: none;
     color: #0D4081;
     border-radius: 10px;
-    transition: all 0.5s; }
-    .tile button:hover {
-      background: #0D4081;
-      color: #fff; }
-  .tile p {
-    margin: 0; }
+    transition: all 0.5s;
+    color: #fff; }
+    .tile button:hover span {
+      padding-right: 22px; }
+    .tile button:hover span:after {
+      opacity: 1;
+      right: 0; }
+    .tile button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.4s; }
+      .tile button span:after {
+        content: '\00bb';
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        margin-top: -4px;
+        right: -20px;
+        transition: 0.5s;
+        font-size: 22px; }
 
 .home-photo-tiles {
   max-width: 500px;

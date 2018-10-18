@@ -3,6 +3,7 @@
 */
 $lightBlue: #0D87C4;
 $darkBlue: #0D4081;
+$darkestBlue: #13314f;
 $dakrGreen: #647C2B;
 $lightGreen: #B8BE00;
 $darkYellow: #F6B229;
@@ -166,25 +167,47 @@ h2 {
   height: 60px;
   margin-top: 1.1rem;
   }
+  p {
+    margin: 0;
+  }
   button {
     font-family: 'Nunito';
     font-size: 1rem;
     margin-top: 1.3rem;
     cursor: pointer;
+    width: 160px;
     padding: 1rem;
-    background: white;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: $darkestBlue;
+    box-shadow: $boxShadow;
     border: none;
     color: $darkBlue;
     border-radius: $borderRadius;
     transition: all 0.5s;
-    &:hover {
-      background: $darkBlue;
-      color: #fff;
+    color: #fff;
+    &:hover span {
+      padding-right: 22px;
     }
-  }
-  p {
-    margin: 0;
+    &:hover span:after {
+    opacity: 1;
+    right: 0;
+    }
+    span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.4s;
+      &:after {
+        content: '\00bb';
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        margin-top: -4px;
+        right: -20px;
+        transition: 0.5s;
+        font-size: 22px;
+      }
+    }
   }
 }
 //photo-tiles
