@@ -86,17 +86,17 @@ nav {
   margin-top: -1.8rem;
   ul {
     margin-top: 2rem;
-      li {
-        margin: 0.7rem;
-        padding-bottom: 0.2rem;
-        display: inline;
-        transition: $transition;
-        &:hover {
-          a {
-            color: $lightBlue;
-          }
+    li {
+      margin: 0.7rem;
+      padding-bottom: 0.2rem;
+      display: inline;
+      transition: $transition;
+      &:hover {
+        a {
+          color: $lightBlue;
         }
       }
+    }
   }
 }
 .menu {
@@ -121,6 +121,29 @@ nav {
    .three {
       top: 80%;
     }
+    &.open {
+      .line {
+        background: $darkYellow;
+      }
+    }
+    &.open .one {
+      transform:rotate(55deg);
+      top: 50%;
+    }
+    &.open .two {
+      transform:rotate(180deg);
+      top: 50%;
+    }
+    &.open .three {
+      transform:rotate(-55deg);
+      top: 50%;
+    }
+    .overlay {
+      height: 70vh;
+       .nav {
+        display: block;
+    }
+  }
 }
 h2 {
   font-size: 1.5rem;
@@ -571,12 +594,6 @@ h2 {
   }
 }
 
-// @media screen and (min-width: 716px) {
-//   .gallery {
-
-//   }
-// }
-
 @media screen and (min-width: 796px) and (max-width: 1088px) {
 //oferta
   .kroki {
@@ -698,11 +715,11 @@ h2 {
     }
   }
   .contact-content {
-    img:last-child {
-      display: block;
-      width: 90%;
-      margin: 2rem auto 2rem auto;
-    }
+    // img:last-child {
+    //   display: block;
+    //   width: 90%;
+    //   margin: 2rem auto 2rem auto;
+    // }
     p:first-child {
       font-size: 20px;
     }

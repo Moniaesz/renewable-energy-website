@@ -97,6 +97,21 @@ nav {
     top: 50%; }
   .menu .three {
     top: 80%; }
+  .menu.open .line {
+    background: #F6B229; }
+  .menu.open .one {
+    transform: rotate(55deg);
+    top: 50%; }
+  .menu.open .two {
+    transform: rotate(180deg);
+    top: 50%; }
+  .menu.open .three {
+    transform: rotate(-55deg);
+    top: 50%; }
+  .menu .overlay {
+    height: 70vh; }
+    .menu .overlay .nav {
+      display: block; }
 
 h2 {
   font-size: 1.5rem;
@@ -573,10 +588,6 @@ h2 {
     .contact-columns .column {
       width: 50%;
       background: none; }
-  .contact-content img:last-child {
-    display: block;
-    width: 90%;
-    margin: 2rem auto 2rem auto; }
   .contact-content p:first-child {
     font-size: 20px; } }
 
