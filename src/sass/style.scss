@@ -55,9 +55,9 @@ a {
   }
 }
 .active {
-  border-bottom: 3px solid $lightBlue;
+  border-bottom: 3px solid #0f72a3;
   a {
-    color: $lightBlue;
+    color: #0f72a3;
   }
 }
 
@@ -93,7 +93,7 @@ nav {
       transition: $transition;
       &:hover {
         a {
-          color: $lightBlue;
+          color: #0f72a3;
         }
       }
     }
@@ -204,13 +204,13 @@ footer {
   margin-top: 1rem;
 }
 .small-footer {
-  background: #1d4166;
+  background: #183a5c;
   padding: 0.5rem;
   p {
     line-height: 20px;
     font-size: 12px;
     margin: 0;
-    color: #aaa7a7;
+    color: #cdcccc;
   }
   a {
     color: $darkYellow;
