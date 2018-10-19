@@ -590,6 +590,24 @@ footer {
 @media screen and (max-width: 870px) {
   nav {
     display: none; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 0; }
+  .show-menu {
+    height: 30rem; }
+  .logo img {
+    position: absolute;
+    top: 0;
+    margin: 15px auto; }
+  .show-nav {
+    display: block;
+    margin-top: -2%;
+    max-height: 35em;
+    width: 100%; }
+    .show-nav ul li:first-child {
+      margin-top: 7rem; }
   .fotowoltaika-tiles .two {
     margin-top: 2rem; } }
 
