@@ -167,7 +167,9 @@ h2 {
 * === footer ===
 */
 footer {
-  background: $darkestBlue;
+  background-image: url("../assets/ps-color-pic/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem 0.5rem 1rem 0.5rem;
   .contact {
     margin-top: 2rem;
@@ -177,7 +179,7 @@ footer {
   }
   p {
     line-height: 25px;
-    color: #e4dcdc;
+    color: #fff;
     font-weight: 300;
     margin: 0;
     font-size: 16px;
@@ -185,11 +187,11 @@ footer {
   img {
     margin-top: 1.5rem;
     height: 50px;
-    opacity: 0.6;
+    opacity: 1;
     transition: $transition;
     cursor: pointer;
     &:hover {
-      opacity: 1;
+      opacity: 0.6;
     }
   }
 }
@@ -198,7 +200,7 @@ footer {
   margin-top: 1rem;
 }
 .small-footer {
-  background: #173554;
+  background: #0b294d;
   padding: 0.5rem;
   p {
     line-height: 20px;
@@ -212,7 +214,7 @@ footer {
   p:last-child {
     font-size: 11px;
     a {
-      color: #d5b97f;
+      color: $darkYellow;
     }
   }
 }

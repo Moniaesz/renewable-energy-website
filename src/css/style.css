@@ -134,7 +134,9 @@ h2 {
 * === footer ===
 */
 footer {
-  background: #13314f;
+  background-image: url("../assets/ps-color-pic/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 2rem 0.5rem 1rem 0.5rem; }
   footer .contact {
     margin-top: 2rem; }
@@ -142,25 +144,25 @@ footer {
     color: #f9f8f8; }
   footer p {
     line-height: 25px;
-    color: #e4dcdc;
+    color: #fff;
     font-weight: 300;
     margin: 0;
     font-size: 16px; }
   footer img {
     margin-top: 1.5rem;
     height: 50px;
-    opacity: 0.6;
+    opacity: 1;
     transition: 0.3s ease-in-out;
     cursor: pointer; }
     footer img:hover {
-      opacity: 1; }
+      opacity: 0.6; }
 
 .footer-inner > p {
   font-size: 12px;
   margin-top: 1rem; }
 
 .small-footer {
-  background: #173554;
+  background: #0b294d;
   padding: 0.5rem; }
   .small-footer p {
     line-height: 20px;
@@ -172,7 +174,7 @@ footer {
   .small-footer p:last-child {
     font-size: 11px; }
     .small-footer p:last-child a {
-      color: #d5b97f; }
+      color: #F6B229; }
 
 /*
 * === home ===
