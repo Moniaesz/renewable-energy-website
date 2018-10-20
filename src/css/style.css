@@ -108,19 +108,16 @@ nav {
   .menu.open .three {
     transform: rotate(-55deg);
     top: 50%; }
-  .menu .overlay {
-    height: 70vh; }
-    .menu .overlay .nav {
-      display: block; }
 
 h2 {
   font-size: 1.5rem;
   margin-top: 2.5rem;
   position: relative;
   color: #0D4081;
-  border-bottom: 4px solid #F6B229;
+  border-bottom: 3px solid #F6B229;
   display: inline-block;
-  padding-bottom: 0.5rem; }
+  padding-bottom: 0.3rem;
+  font-weight: 300; }
 
 /*
 * === google map ===
@@ -142,7 +139,7 @@ footer {
   footer .contact {
     margin-top: 2rem; }
   footer a:link, footer a:visited {
-    color: #e4dcdc; }
+    color: #f9f8f8; }
   footer p {
     line-height: 25px;
     color: #e4dcdc;
@@ -163,7 +160,7 @@ footer {
   margin-top: 1rem; }
 
 .small-footer {
-  background: #183a5c;
+  background: #173554;
   padding: 0.5rem; }
   .small-footer p {
     line-height: 20px;
@@ -220,10 +217,10 @@ footer {
     margin: 0; }
   .tile button {
     font-family: 'Nunito';
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1.3rem;
     cursor: pointer;
-    width: 160px;
+    width: 190px;
     padding: 1rem;
     background: #13314f;
     box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
@@ -273,7 +270,8 @@ footer {
   color: #fff; }
   .icon-tile p {
     margin-top: 0;
-    color: #fff; }
+    color: #fff;
+    font-size: 19px; }
 
 .home-photo-tile {
   background-repeat: no-repeat;
@@ -306,7 +304,7 @@ footer {
 * === fotowoltaika ===
 */
 .fotowoltaika-tiles {
-  max-width: 1200px; }
+  max-width: 1100px; }
   .fotowoltaika-tiles p {
     color: #fff; }
   .fotowoltaika-tiles .one {
@@ -314,7 +312,7 @@ footer {
   .fotowoltaika-tiles .two {
     background-image: url("../assets/ps-color-pic/inverter-bg.jpg"); }
   .fotowoltaika-tiles img {
-    height: 80px; }
+    height: 70px; }
 
 .fotowoltaika-tile {
   background-repeat: no-repeat;
@@ -596,7 +594,7 @@ footer {
     align-items: center;
     max-height: 0; }
   .show-menu {
-    height: 30rem; }
+    height: 29rem; }
   .logo img {
     position: absolute;
     top: 0;
@@ -607,7 +605,7 @@ footer {
     max-height: 35em;
     width: 100%; }
     .show-nav ul li:first-child {
-      margin-top: 7rem; }
+      margin-top: 6rem; }
   .fotowoltaika-tiles .two {
     margin-top: 2rem; } }
 
@@ -635,10 +633,10 @@ footer {
   .menu {
     display: none; }
   .footer-inner {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 1fr 1fr; }
     .footer-inner > p {
       font-size: 13px;
@@ -646,12 +644,13 @@ footer {
       grid-template-row: 2;
       align-self: end; }
     .footer-inner .contact {
-      margin-top: 0; }
+      margin-top: 0;
+      margin-left: 3.5rem; }
     .footer-inner img {
       margin-top: 0;
       justify-self: center; }
   .home-banner h1 {
-    font-size: 1.7rem; }
+    font-size: 1.9rem; }
   .ref-tiles {
     flex-direction: row;
     max-width: 1300px;
@@ -676,7 +675,8 @@ footer {
     height: 20rem;
     width: 100%; }
   .text-block {
-    padding: 1rem 25%; }
+    max-width: 850px;
+    margin: 0 auto; }
   .mockup img {
     width: 55%; }
   .fotowoltaika-tiles {
@@ -685,7 +685,7 @@ footer {
     margin-top: 2.5rem;
     margin-bottom: 1.2rem; }
     .fotowoltaika-tiles img {
-      height: 100px; }
+      height: 85px; }
     .fotowoltaika-tiles p {
       padding: 2rem; }
     .fotowoltaika-tiles .one {
@@ -705,19 +705,24 @@ footer {
     display: flex; }
     .contact-columns .two {
       margin-top: 0; }
+      .contact-columns .two p {
+        line-height: 30px;
+        margin-top: -0.9rem; }
     .contact-columns .column {
       width: 50%;
       background: none; }
   .contact-content p:first-child {
     font-size: 20px; } }
 
-@media screen and (min-width: 990px) and (max-width: 1160px) {
+@media screen and (min-width: 930px) and (max-width: 1160px) {
   .tile {
-    max-width: 250px; } }
+    max-width: 220px; } }
 
 @media screen and (min-width: 1055px) {
   nav {
     margin-right: 1rem; }
+  .icon-tile p {
+    font-size: 24px; }
   #google-map {
     max-width: 1300px;
     margin: 3rem auto; }
@@ -748,7 +753,8 @@ footer {
 
 @media screen and (min-width: 1255px) {
   h2 {
-    font-size: 2.1rem; }
+    font-size: 2.1rem;
+    font-weight: 300; }
   h3 {
     font-size: 1.6rem; }
   p, li {

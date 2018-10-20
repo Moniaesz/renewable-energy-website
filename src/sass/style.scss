@@ -112,37 +112,31 @@ nav {
     border-radius: 10px;
     transition: 0.2s ease-in-out;
   }
-   .one {
-      top: 20%;
+  .one {
+    top: 20%;
+  }
+  .two {
+    top: 50%;
+  }
+  .three {
+    top: 80%;
+  }
+  &.open {
+    .line {
+      background: $darkYellow;
     }
-   .two {
-      top: 50%;
-    }
-   .three {
-      top: 80%;
-    }
-    &.open {
-      .line {
-        background: $darkYellow;
-      }
-    }
-    &.open .one {
-      transform:rotate(55deg);
-      top: 50%;
-    }
-    &.open .two {
-      transform:rotate(180deg);
-      top: 50%;
-    }
-    &.open .three {
-      transform:rotate(-55deg);
-      top: 50%;
-    }
-    .overlay {
-      height: 70vh;
-       .nav {
-        display: block;
-    }
+  }
+  &.open .one {
+    transform:rotate(55deg);
+    top: 50%;
+  }
+  &.open .two {
+    transform:rotate(180deg);
+    top: 50%;
+  }
+  &.open .three {
+    transform:rotate(-55deg);
+    top: 50%;
   }
 }
 h2 {
@@ -150,9 +144,10 @@ h2 {
   margin-top: 2.5rem;
   position: relative;
   color: $darkBlue;
-  border-bottom: 4px solid $darkYellow;
+  border-bottom: 3px solid $darkYellow;
   display: inline-block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
+  font-weight: 300;
 }
 
 /*
@@ -174,12 +169,11 @@ h2 {
 footer {
   background: $darkestBlue;
   padding: 2rem 0.5rem 1rem 0.5rem;
-  // margin-top: 2rem;
   .contact {
     margin-top: 2rem;
   }
   a:link, a:visited {
-    color: #e4dcdc;
+    color: $lightGrey;
   }
   p {
     line-height: 25px;
@@ -204,7 +198,7 @@ footer {
   margin-top: 1rem;
 }
 .small-footer {
-  background: #183a5c;
+  background: #173554;
   padding: 0.5rem;
   p {
     line-height: 20px;
@@ -272,10 +266,10 @@ footer {
   }
   button {
     font-family: 'Nunito';
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-top: 1.3rem;
     cursor: pointer;
-    width: 160px;
+    width: 190px;
     padding: 1rem;
     background: $darkestBlue;
     box-shadow: $boxShadow;
@@ -333,6 +327,7 @@ footer {
   p {
     margin-top: 0;
     color: #fff;
+    font-size: 19px;
   }
 }
 .home-photo-tile {
@@ -371,7 +366,7 @@ footer {
 * === fotowoltaika ===
 */
 .fotowoltaika-tiles {
-  max-width: 1200px;
+  max-width: 1100px;
   p {
     color: #fff;
   }
@@ -382,7 +377,7 @@ footer {
     background-image: url("../assets/ps-color-pic/inverter-bg.jpg");
   }
   img {
-    height: 80px;
+    height: 70px;
   }
 }
 .fotowoltaika-tile {
@@ -684,7 +679,6 @@ footer {
   }
 }
 
-
 /*
 * === media queries ===
 */
@@ -702,7 +696,7 @@ footer {
     }
   }
   .show-menu {
-    height: 30rem;
+    height: 29rem;
   }
   .logo img {
     position: absolute;
@@ -715,7 +709,7 @@ footer {
     max-height: 35em;
     width: 100%;
     ul li:first-child {
-      margin-top: 7rem;
+      margin-top: 6rem;
     }
   }
 //fotowoltaika
@@ -724,9 +718,7 @@ footer {
       margin-top: 2rem;
     }
   }
-
 }
-
 @media screen and (min-width: 796px) and (max-width: 1088px) {
 //oferta
   .kroki {
@@ -751,7 +743,6 @@ footer {
     }
   }
 }
-
 @media screen and (min-width: 871px) {
 //header
   nav {
@@ -762,10 +753,10 @@ footer {
   }
 //footer 
   .footer-inner {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 300px 300px 300px;
     grid-template-rows: 1fr 1fr;
     & > p {
       font-size: 13px;
@@ -775,6 +766,7 @@ footer {
     }
     .contact{
       margin-top: 0;
+      margin-left: 3.5rem;
     }
     img {
       margin-top: 0;
@@ -784,7 +776,7 @@ footer {
 //home
   .home-banner {
     h1 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
   }
   .ref-tiles {
@@ -818,7 +810,8 @@ footer {
   }
 // o-firmie
   .text-block {
-    padding: 1rem 25%;
+    max-width: 850px;
+    margin: 0 auto;
   }
   .mockup {
     img {
@@ -832,7 +825,7 @@ footer {
     margin-top:2.5rem;
     margin-bottom: 1.2rem;
     img {
-      height: 100px;
+      height: 85px;
     }
     p {
       padding: 2rem;
@@ -862,6 +855,10 @@ footer {
     display: flex;
     .two {
       margin-top: 0;
+      p {
+        line-height: 30px;
+        margin-top: -0.9rem;
+      }
     }
     .column {
       width: 50%;
@@ -869,28 +866,27 @@ footer {
     }
   }
   .contact-content {
-    // img:last-child {
-    //   display: block;
-    //   width: 90%;
-    //   margin: 2rem auto 2rem auto;
-    // }
     p:first-child {
       font-size: 20px;
     }
   }
 }
-
-@media screen and (min-width: 990px) and (max-width: 1160px) {
+@media screen and (min-width: 930px) and (max-width: 1160px) {
   .tile {
-    max-width: 250px;
+    max-width: 220px;
   }
 }
-
 @media screen and (min-width: 1055px) {
 //header
   nav {
     margin-right: 1rem;
   }
+//home
+.icon-tile {
+  p {
+    font-size: 24px;
+  }
+}
 //goole map
   #google-map {
     max-width: 1300px;
@@ -901,7 +897,6 @@ footer {
     }
   }
 }
-
 @media screen and (min-width: 1089px) {
 //oferta
   .kroki {
@@ -929,10 +924,10 @@ footer {
     }
   }
 }
-
 @media screen and (min-width: 1255px) {
   h2 {
     font-size: 2.1rem;
+    font-weight: 300;
   }
   h3 {
     font-size: 1.6rem;
