@@ -5,7 +5,7 @@ $lightBlue: #0D87C4;
 $darkBlue: #0D4081;
 $darkestBlue: #13314f;
 $dakrGreen: #647C2B;
-$lightGreen: #B8BE00;
+$lightGreen: #a1a604;
 $darkYellow: #F6B229;
 $lightGrey: #f9f8f8;
 $lightBlack: #454242;
@@ -456,7 +456,7 @@ footer {
   }
 }
 .jakosc {
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 1rem;
   h3 {
@@ -494,6 +494,15 @@ footer {
     font-weight: bold;
   }
 }
+.pompa, .klimatyzacja {
+  h3 {
+    margin-bottom: 0;
+    &:nth-child(1) {
+      border-bottom: 2px solid $lightBlue;
+    }
+  }
+}
+
 
 /*
 * === realizacje ===
@@ -742,6 +751,15 @@ footer {
     .img {
       width: 100%;
       margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 752px) {
+  .jakosc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .title {
+      grid-column: 1/-1;
     }
   }
 }
