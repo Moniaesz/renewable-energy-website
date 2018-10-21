@@ -412,16 +412,13 @@ footer {
 .fotowoltaika-law {
   box-shadow: $boxShadow;
   border-radius: $borderRadius;
+  border: 1px solid #dedede;
   padding: 1rem;
   margin-top: 3rem;
 }
 .law {
   height: 70px;
 }
-.on-grid {
-  width: 100%;
-}
-
 /*
 * === oferta ===
 */
