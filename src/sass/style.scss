@@ -167,7 +167,7 @@ h2 {
 * === footer ===
 */
 footer {
-  background-image: url("../assets/ps-color-pic/footer.jpg");
+  background-image: url("../assets/ps-color-pic/footer-db.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 2rem 0.5rem 1rem 0.5rem;
@@ -200,8 +200,8 @@ footer {
   margin-top: 1rem;
 }
 .small-footer {
-  background: #0b294d;
-  padding: 0.5rem;
+  background: #0b2138;
+  padding: 1rem;
   p {
     line-height: 20px;
     font-size: 12px;
@@ -418,6 +418,9 @@ footer {
 }
 .law {
   height: 70px;
+}
+.on-grid {
+  width: 100%;
 }
 /*
 * === oferta ===
@@ -758,6 +761,10 @@ footer {
     .title {
       grid-column: 1/-1;
     }
+  }
+//fotowoltaika 
+  .on-grid {
+    width: 70%;
   }
 }
 @media screen and (min-width: 871px) {
