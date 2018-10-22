@@ -34,6 +34,11 @@ h1 {
   font-size: 1.5rem;
   color: #fff;
   font-weight: 300;
+//animation
+  transform: scale(0);
+  animation-name: text-anim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 h3 {
   font-size: 1.2rem;
@@ -265,7 +270,21 @@ footer {
   }
   p {
     margin: 0;
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
   }
+@keyframes text-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
   button {
     font-family: 'Nunito';
     font-size: 1.1rem;
@@ -587,9 +606,6 @@ footer {
 }
 .img-12 {
   background-image: url("../assets/realizacje/12.jpg");
-}
-.img-13 {
-  background-image: url("../assets/realizacje/13.jpg");
 }
 .img-14 {
   background-image: url("../assets/realizacje/14.jpg");
