@@ -549,7 +549,7 @@ footer {
     text-align: left;
     line-height: 1.8rem;
     li {
-      list-style-type: circle;
+      list-style-type: disc;
     }
   }
 }
@@ -561,26 +561,35 @@ footer {
     margin-top: 0;
   }
 }
+.components {
+  background: $darkestBlue;
+  padding: 0.5rem;
+  margin: 0.7rem auto;
+  border-radius: $borderRadius;
+  h3, p, li {
+    color: #fff;
+  }
+  span {
+    color: $darkYellow;
+  }
+}
 .moduly, .falowniki {
   h3 {
     margin-bottom: 0;
     &:nth-child(1) {
-      border-bottom: 2px solid $lightBlue;
+      border-bottom: 2px solid $darkYellow;
     }
   }
   p:last-child {
-    font-weight: bold;
-  }
-  span {
-    color: $lightGreen;
-    font-weight: bold;
+    color: $darkYellow;
+    // color: #f4bf53;
   }
 }
 .pompa, .klimatyzacja {
   h3 {
     margin-bottom: 0;
     &:nth-child(1) {
-      border-bottom: 2px solid $lightBlue;
+      border-bottom: 2px solid $darkYellow;
     }
   }
 }
@@ -828,13 +837,6 @@ footer {
   }
 }
 @media screen and (min-width: 752px) {
-  .jakosc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .title {
-      grid-column: 1/-1;
-    }
-  }
 //fotowoltaika 
   .on-grid {
     width: 70%;
@@ -944,6 +946,18 @@ footer {
     box-shadow: $boxShadow;
     padding: 3rem;
     margin-top: 5rem;
+  }
+//oferta
+  .jakosc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .title {
+      grid-column: 1/-1;
+    }
+  }
+  .components {
+    margin: 1.5rem;
+    padding: 1.2rem;
   }
 //kontakt
   .contact-columns {
