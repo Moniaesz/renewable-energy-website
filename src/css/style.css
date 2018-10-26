@@ -5,7 +5,16 @@
 * === other variables===
 */
 /*
+* === keyframes===
+*/
+@keyframes text-anim {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
 
+/*
 * === general styles ===
 */
 body {
@@ -24,7 +33,7 @@ h1 {
   font-weight: 300;
   transform: scale(0);
   animation-name: text-anim;
-  animation-duration: 2s;
+  animation-duration: 1.1s;
   animation-fill-mode: forwards; }
 
 h3 {
@@ -201,11 +210,21 @@ footer {
     color: #fff;
     max-width: 600px;
     font-weight: 300;
-    padding: 1rem; }
+    padding: 1rem;
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
 
 .ref-tiles {
   display: flex;
   flex-direction: column; }
+  .ref-tiles .one p {
+    animation-delay: .7s; }
+  .ref-tiles .two p {
+    animation-delay: 1.3s; }
+  .ref-tiles .three p {
+    animation-delay: 1.8s; }
 
 .tile {
   max-width: 450px;
@@ -223,16 +242,8 @@ footer {
     margin: 0;
     transform: scale(0);
     animation-name: text-anim;
-    animation-duration: 2s;
-    animation-delay: .3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards; }
-
-@keyframes text-anim {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1;
-    transform: scale(1); } }
   .tile button {
     font-family: 'Nunito';
     font-size: 1.1rem;
@@ -308,11 +319,22 @@ footer {
 /*
 * === o firmie ===
 */
-.text-block {
+.o-firmie {
   padding: 1rem; }
-  .text-block img {
-    height: 80px;
+  .o-firmie img {
+    height: 60px;
     margin-top: 1.1rem; }
+  .o-firmie p {
+    margin-top: 0; }
+  .o-firmie .p-two, .o-firmie .p-three, .o-firmie .p-four {
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; }
+  .o-firmie .p-three {
+    animation-delay: 0.6s; }
+  .o-firmie .p-four {
+    animation-delay: 1.2s; }
 
 .mockup img {
   width: 90%;
@@ -324,11 +346,17 @@ footer {
 .fotowoltaika-tiles {
   max-width: 1100px; }
   .fotowoltaika-tiles p {
-    color: #fff; }
+    color: #fff;
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; }
   .fotowoltaika-tiles .one {
     background-image: url("../assets/ps-color-pic/panels-bg.jpg"); }
   .fotowoltaika-tiles .two {
     background-image: url("../assets/ps-color-pic/inverter-bg.jpg"); }
+    .fotowoltaika-tiles .two p {
+      animation-delay: 0.6s; }
   .fotowoltaika-tiles img {
     height: 70px; }
 
@@ -373,6 +401,14 @@ footer {
 */
 .kroki {
   margin-top: 1.6rem; }
+  .kroki .one p {
+    animation-delay: .5s; }
+  .kroki .two p {
+    animation-delay: 1s; }
+  .kroki .three p {
+    animation-delay: 1.5s; }
+  .kroki .four p {
+    animation-delay: 2s; }
 
 .kroki-tile {
   max-width: 480px;
@@ -395,7 +431,11 @@ footer {
   .kroki-tile p {
     padding-bottom: 1rem;
     margin-left: 0.8rem;
-    margin-right: 0.81rem; }
+    margin-right: 0.81rem;
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; }
 
 .jakosc {
   max-width: 1300px;
@@ -579,6 +619,11 @@ footer {
   .contact-columns h3 {
     color: #F6B229;
     font-weight: bold; }
+  .contact-columns p {
+    transform: scale(0);
+    animation-name: text-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards; }
   .contact-columns .column {
     border-radius: 10px;
     background: #faf8f8;
@@ -587,6 +632,8 @@ footer {
     margin-top: -1rem; }
   .contact-columns .two {
     margin-top: 2rem; }
+    .contact-columns .two p {
+      animation-delay: 0.5s; }
 
 /*
 * === media queries ===
@@ -689,8 +736,8 @@ footer {
     margin: 0 auto;
     height: 20rem;
     width: 100%; }
-  .text-block {
-    max-width: 850px;
+  .o-firmie {
+    max-width: 940px;
     margin: 0 auto; }
   .mockup img {
     width: 55%; }
