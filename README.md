@@ -2,6 +2,9 @@
 
 Desinged and prototyped in AdobeXD.
 
+![style guide](readme-img/style-guide.jpg)
+![prototype](readme-img/prototype.jpg)
+
 Website based on grid & flexbox layout and media queries to achieve responsiveness.
 
 ##### Page content
