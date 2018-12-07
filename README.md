@@ -1,11 +1,11 @@
 ### Website for polish renewable energy company
 
+Layout based on grid, flexbox & media queries to achieve responsiveness.
+
 Desinged and prototyped in AdobeXD.
 
 ![style guide](readme-img/style-guide.jpg)
 ![prototype](readme-img/prototype.jpg)
-
-Website based on grid & flexbox layout and media queries to achieve responsiveness.
 
 #### Page content
 * Website with subpages contains main company profile and services.
@@ -14,7 +14,7 @@ Website based on grid & flexbox layout and media queries to achieve responsivene
 
 You can visit website on: https://sunpowerpv.pl/
 
-#### For developers [Setup instructions]
+#### For developers [Setup instructions];
 * You need NPM and GULP installed
 * Copy or clone repository
 * Cd to project directory and run `gulp`
