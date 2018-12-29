@@ -24,5 +24,5 @@ You can visit website on: https://sunpowerpv.pl/
 #### Dependencies
 * Website was created with [Flexbox Layout](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) and [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 * Icons by [Flaticon](https://www.flaticon.com/)
-* Automatation by [Gulp](https://gulpjs.com/)
+* Automation by [Gulp](https://gulpjs.com/)
 * build and deployment by [Netlify](https://www.netlify.com/)
