@@ -4,7 +4,8 @@ Layout based on grid, flexbox & media queries to achieve responsiveness.
 
 Desinged and prototyped in AdobeXD.
 
-![style guide](readme-img/style-guide.jpg)
+<img src="readme-img/style-guide.jpg" width="500">
+
 ![prototype](readme-img/prototype.jpg)
 
 #### Page content
